@@ -1,9 +1,18 @@
-//your JS code here. If required.
+const modal = document.querySelector(".modal");
+const openBtn = document.querySelector("#openModal");
+const closeBtn = document.querySelector(".close-modal");
 
-document.querySelector("#openModal").addEventListener("click",()=>{
-	document.querySelector(".modal").style.display = "block"
-})
-document.querySelector(".close-modal").addEventListener("click",()=>{
-	document.querySelector(".modal").style.display = "none"
-})
+openBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
 
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// ✅ Handle clicks outside the modal-content
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
