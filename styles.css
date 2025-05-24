@@ -2,12 +2,10 @@
 
 .modal{
 	width:100%;
-	position:absolute;
+	position:absolute
 	top:0;
 	height:100vh;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+	display:none;
 	background-color:rgba(0,0,0,0.4);
 }
 
@@ -15,6 +13,7 @@
 	width:70%;
 	background-color:white;
 	display:flex;
+	margin:auto auto;
 	flex-direction:column;
 	
 }
@@ -30,7 +29,4 @@
 }
 .modal-body{
 	text-align:center;
-}
-.hidden{
-display:none;
 }
