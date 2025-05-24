@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+
+.modal{
+	width:100%;
+	position:absolute;
+	top:0;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:rgba(0,0,0,0.4);
+}
+
+.modal-content{
+	width:70%;
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	
+}
+.modal-header{
+	display:flex;
+	background-color:green;
+	color:white;
+	justify-content:space-around;
+	align-items:center;
+}
+.modal-header button{
+	height:fit-content;
+}
+.modal-body{
+	text-align:center;
+}
+.hidden{
+display:none;
+}
